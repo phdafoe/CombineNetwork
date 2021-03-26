@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4582E7A260E73B300E75826 /* CardPostCarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4582E79260E73B300E75826 /* CardPostCarrouselView.swift */; };
 		B4C5B617260DF4E700D75025 /* CombineNetworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5B616260DF4E700D75025 /* CombineNetworkApp.swift */; };
 		B4C5B619260DF4E700D75025 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5B618260DF4E700D75025 /* MoviesView.swift */; };
 		B4C5B61B260DF4E900D75025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C5B61A260DF4E900D75025 /* Assets.xcassets */; };
@@ -16,9 +17,13 @@
 		B4C5B66F260E471F00D75025 /* NetworkCoordinator+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5B66E260E471F00D75025 /* NetworkCoordinator+Helpers.swift */; };
 		B4C5B672260E533E00D75025 /* MovieLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5B671260E533E00D75025 /* MovieLogicController.swift */; };
 		B4C5B676260E55D400D75025 /* MoviesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5B675260E55D400D75025 /* MoviesVM.swift */; };
+		DC4591ACAA0C71F7C79C91FE /* Pods_CombineNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5028AE0DC1229ACFB20CF9 /* Pods_CombineNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74503009093EF24B874AADF7 /* Pods-CombineNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineNetwork.debug.xcconfig"; path = "Target Support Files/Pods-CombineNetwork/Pods-CombineNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		AF5028AE0DC1229ACFB20CF9 /* Pods_CombineNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4582E79260E73B300E75826 /* CardPostCarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPostCarrouselView.swift; sourceTree = "<group>"; };
 		B4C5B613260DF4E700D75025 /* CombineNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C5B616260DF4E700D75025 /* CombineNetworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineNetworkApp.swift; sourceTree = "<group>"; };
 		B4C5B618260DF4E700D75025 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		B4C5B66E260E471F00D75025 /* NetworkCoordinator+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkCoordinator+Helpers.swift"; sourceTree = "<group>"; };
 		B4C5B671260E533E00D75025 /* MovieLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLogicController.swift; sourceTree = "<group>"; };
 		B4C5B675260E55D400D75025 /* MoviesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVM.swift; sourceTree = "<group>"; };
+		F26B4727569401E61FCCD7FC /* Pods-CombineNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineNetwork.release.xcconfig"; path = "Target Support Files/Pods-CombineNetwork/Pods-CombineNetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4591ACAA0C71F7C79C91FE /* Pods_CombineNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0117692C9B424C23B1B2E46A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF5028AE0DC1229ACFB20CF9 /* Pods_CombineNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F62A0248AB3C98E2DC4C4EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74503009093EF24B874AADF7 /* Pods-CombineNetwork.debug.xcconfig */,
+				F26B4727569401E61FCCD7FC /* Pods-CombineNetwork.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4582E72260E735E00E75826 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4C5B666260E44CD00D75025 /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4582E75260E736600E75826 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				B4C5B671260E533E00D75025 /* MovieLogicController.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		B4582E76260E737600E75826 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B4582E78260E738300E75826 /* Components */,
+				B4C5B618260DF4E700D75025 /* MoviesView.swift */,
+				B4C5B675260E55D400D75025 /* MoviesVM.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		B4582E78260E738300E75826 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B4582E79260E73B300E75826 /* CardPostCarrouselView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		B4C5B60A260DF4E700D75025 = {
 			isa = PBXGroup;
 			children = (
 				B4C5B615260DF4E700D75025 /* CombineNetwork */,
 				B4C5B614260DF4E700D75025 /* Products */,
+				4F62A0248AB3C98E2DC4C4EB /* Pods */,
+				0117692C9B424C23B1B2E46A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				B4C5B66A260E469B00D75025 /* API */,
-				B4C5B665260E44C100D75025 /* Model */,
+				B4C5B665260E44C100D75025 /* Modules */,
 				B4C5B616260DF4E700D75025 /* CombineNetworkApp.swift */,
 				B4C5B61A260DF4E900D75025 /* Assets.xcassets */,
 				B4C5B61F260DF4E900D75025 /* Info.plist */,
@@ -80,15 +140,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B4C5B665260E44C100D75025 /* Model */ = {
+		B4C5B665260E44C100D75025 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B4C5B666260E44CD00D75025 /* MovieModel.swift */,
-				B4C5B671260E533E00D75025 /* MovieLogicController.swift */,
-				B4C5B618260DF4E700D75025 /* MoviesView.swift */,
-				B4C5B675260E55D400D75025 /* MoviesVM.swift */,
+				B4582E72260E735E00E75826 /* Model */,
+				B4582E75260E736600E75826 /* Provider */,
+				B4582E76260E737600E75826 /* Module */,
 			);
-			path = Model;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		B4C5B66A260E469B00D75025 /* API */ = {
@@ -107,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4C5B622260DF4E900D75025 /* Build configuration list for PBXNativeTarget "CombineNetwork" */;
 			buildPhases = (
+				CD3907BD1FCB404DA1E56196 /* [CP] Check Pods Manifest.lock */,
 				B4C5B60F260DF4E700D75025 /* Sources */,
 				B4C5B610260DF4E700D75025 /* Frameworks */,
 				B4C5B611260DF4E700D75025 /* Resources */,
+				0C83F75401FBF04AD6EEE6FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,11 +225,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C83F75401FBF04AD6EEE6FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CombineNetwork/Pods-CombineNetwork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CombineNetwork/Pods-CombineNetwork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CombineNetwork/Pods-CombineNetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD3907BD1FCB404DA1E56196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CombineNetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4C5B60F260DF4E700D75025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4582E7A260E73B300E75826 /* CardPostCarrouselView.swift in Sources */,
 				B4C5B667260E44CD00D75025 /* MovieModel.swift in Sources */,
 				B4C5B672260E533E00D75025 /* MovieLogicController.swift in Sources */,
 				B4C5B66C260E46BB00D75025 /* NetworkCoordinator.swift in Sources */,
@@ -300,6 +404,7 @@
 		};
 		B4C5B623260DF4E900D75025 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74503009093EF24B874AADF7 /* Pods-CombineNetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +427,7 @@
 		};
 		B4C5B624260DF4E900D75025 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F26B4727569401E61FCCD7FC /* Pods-CombineNetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

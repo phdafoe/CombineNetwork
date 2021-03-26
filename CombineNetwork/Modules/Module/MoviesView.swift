@@ -12,8 +12,14 @@ struct MoviesView: View {
     @ObservedObject var viewModel = MoviesVM()
     
     var body: some View {
-        NavigationView{
-            
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                CardPostCarrouselView(movies: self.viewModel.arrayMovies)
+                    .navigationTitle("Movies - iTunes")
+                    .onAppear(perform: {
+                        self.viewModel.fetchArrayData(count: 99)
+                    })
+            }
         }
     }
 }
