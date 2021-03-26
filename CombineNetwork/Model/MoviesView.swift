@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MoviesView.swift
 //  CombineNetwork
 //
 //  Created by Andres Felipe Ocampo Eljaiek on 26/03/2021.
@@ -7,15 +7,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MoviesView: View {
+    
+    @ObservedObject var viewModel = MoviesVM()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MoviesView()
     }
 }
